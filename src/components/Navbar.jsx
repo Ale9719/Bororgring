@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* LOGO CON LINK */}
       <div> 
         <Link to="/" className="block">
-          <img src="/svg/Bororgring.svg" alt="Borörgring Logo" className="w-[14%] ml-[5.5%] transition-all duration-300" />
+          <img src="svg/Bororgring.svg" alt="Borörgring Logo" className="w-[14%] ml-[5.5%] transition-all duration-300" />
         </Link>
       </div>
       <div className="absolute left-0 top-full h-3.75 w-75 bg-main z-10" style={{ clipPath: 'polygon(0px 0px, 100% 0px, 90% 100%, 0px 100%)', filter: 'drop-shadow(var(--shadow-main))' }}>
