@@ -46,9 +46,6 @@ const Home = () => {
       </section>
       {/* --- SEZIONE CIRCUITO  --- */}
       <section className="relative py-20 overflow-hidden">
-        <span className="absolute -left-10 top-10 text-[20rem] font-black text-white/3 pointer-events-none select-none">
-          01
-        </span>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
