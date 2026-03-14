@@ -1,9 +1,9 @@
 {
+  "homepage": "https://ale9719.github.io/Bororgring",
   "name": "bororgring",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ale9719.github.io/Bororgring/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
