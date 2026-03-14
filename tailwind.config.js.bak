@@ -1,0 +1,41 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        petrol: {
+          dark: '#1A2F2D',
+          mid: '#2C4A47',
+        },
+        gold: {
+          DEFAULT: '#D4AF37',
+        },
+        lilla: '#D18BFF', // Aggiungilo qui se non lo hai già
+        offwhite: '#F5F5F5',
+        muted: '#A0A0A0',
+      },
+      fontFamily: {
+        racing: ['"Titillium Web"', 'sans-serif'],
+      },
+      animation: {
+        'smoke-drift': 'smoke 15s ease infinite',
+        'shake': 'mechanic-shake 0.1s ease-in-out infinite', 
+      },
+      keyframes: {
+        smoke: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+        'mechanic-shake': {
+          '0%, 100%': { transform: 'translateX(0) skewX(-12deg)' },
+          '25%': { transform: 'translateX(-1px) skewX(-12deg)' },
+          '75%': { transform: 'translateX(1px) skewX(-12deg)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+}

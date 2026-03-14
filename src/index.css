@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+  :root {
+  --main-color-rgb: 255,95,31;
+  --carbon-main: #121212;
+  --carbon-line: #000000;
+}
+@theme {
+  --color-dark: #0a0a0a;;
+  --color-main: #49F2F2;
+  --shadow-main: color-mix(in srgb, var(--color-main) 60%, transparent);  
+  --font-racing: "Titillium Web", sans-serif;
+
+
+  --animate-shake: mechanic-shake 0.1s ease-in-out infinite;
+
+  @keyframes mechanic-shake {
+    0%, 100% { transform: translateX(0) skewX(-12deg); }
+    25% { transform: translateX(-1.5px) skewX(-12deg); }
+    75% { transform: translateX(1.5px) skewX(-12deg); }
+  }
+
+  --animate-smoke-float: smoke-float 10s ease-in-out infinite;
+
+  @keyframes smoke-float {
+    0% { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
+    25% { opacity: 0.4; }
+    50% { transform: translateY(-50px) translateX(20px) scale(1.2); }
+    75% { opacity: 0.4; }
+    100% { transform: translateY(-100px) translateX(-20px) scale(1.5); opacity: 0; }
+  }
+  @keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+}
+
+body {
+  font-family: var(--font-racing);
+  background-color: var(--carbon-main);
+  background-image: 
+    linear-gradient(45deg, var(--carbon-line) 25%, transparent 25%), 
+    linear-gradient(-45deg, var(--carbon-line) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, var(--carbon-line) 75%), 
+    linear-gradient(-45deg, transparent 75%, var(--carbon-line) 75%);
+  background-size: 12px 12px;
+  color: white;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* Questo gradiente crea un punto luce: al centro il carbonio è più chiaro, ai bordi è nero */
+  background: radial-gradient(
+    circle at 50% 50%, 
+    rgba(255, 255, 255, 0.05) 0%, 
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
