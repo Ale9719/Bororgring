@@ -149,14 +149,14 @@ const nextEvent = events[0];
             <Cards title="Galleria Eventi" subtitle="Foto e video di gruppo" buttonText="Esplora" link="/garage">
               <div className="grid grid-cols-2 gap-2 h-48 overflow-hidden rounded-lg">
                 {/* grayscale sempre su mobile, rimosso solo al hover da lg */}
-                <img src="img/evento1/1.jpg" alt="E1" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 scale-110 lg:group-hover:scale-100" />
-                <img src="img/evento1/2.jpg" alt="E2" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 scale-110 lg:group-hover:scale-100" />
+                <img loading="lazy" src="img/evento1/1.jpg" alt="E1" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 scale-110 lg:group-hover:scale-100" />
+                <img loading="lazy" src="img/evento1/2.jpg" alt="E2" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 scale-110 lg:group-hover:scale-100" />
               </div>
             </Cards>
             
             <Cards title="La Squadra" subtitle="Incontra i fondatori" buttonText="Scopri" link="/about">
               <div className="h-48 overflow-hidden rounded-lg">
-                <img src="img/IMG_3373.jpg" alt="Team" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 lg:group-hover:scale-105" />
+                <img loading="lazy" src="img/IMG_3373.jpg" alt="Team" className="w-full h-full object-cover grayscale lg:group-hover:grayscale-0 transition-all duration-500 lg:group-hover:scale-105" />
               </div>
             </Cards>
           </div>

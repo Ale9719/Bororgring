@@ -92,7 +92,7 @@ const Gallery = () => {
       {modalImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 backdrop-blur-sm" onClick={() => setModalImage(null)}>
           <div className="relative w-fit flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={modalImage} alt="Ingrandita" className="max-h-[80vh] border-2 border-main" />
+            <img loading="lazy" src={modalImage} alt="Ingrandita" className="max-h-[80vh] border-2 border-main" />
             <a href={modalImage} download className="bg-main text-black font-bold px-8 py-3 uppercase lg:hover:bg-white transition-all">Scarica</a>
           </div>
         </div>

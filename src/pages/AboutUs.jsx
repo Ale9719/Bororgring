@@ -44,11 +44,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
           <div className="relative border-2 border-main p-2 transform -rotate-2 shadow-[0_0_15px_var(--shadow-main)]">
-            <img
-              src="img/IMG_3373.jpg"
-              alt="Storia"
-              className="w-full h-100 object-cover lg:grayscale lg:hover:grayscale-0 transition duration-700"
-            />
+            <img src="img/IMG_3373.jpg" alt="Storia" loading="lazy" className="w-full h-100 object-cover lg:grayscale lg:hover:grayscale-0 transition duration-700"/>
             <div className="absolute -bottom-6 -right-6 bg-main text-black p-4 font-black uppercase italic text-xl shadow-[5px_5px_0px_white]">
               Da ieri
             </div>
@@ -91,11 +87,7 @@ const AboutUs = () => {
               link={`/team/${member.name.toLowerCase()}`}
             >
               <div className="w-full aspect-square overflow-hidden">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-full h-full object-cover lg:grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110"
-                />
+                <img src={member.img} alt={member.name} loading="lazy" className="w-full h-full object-cover lg:grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110"/>
               </div>
             </Cards>
           ))}

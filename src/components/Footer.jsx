@@ -10,7 +10,7 @@ const Footer = () => {
         {/* COLONNA 1: LOGO */}
         <div className="flex flex-col gap-4">
           <Link className=' self-center' to="/">
-            <img src="svg/Bororgring.svg" alt="Borörgring Logo" className="w-48 brightness-0 invert" />
+            <img loading="lazy" src="svg/Bororgring.svg" alt="Borörgring Logo" className="w-48 brightness-0 invert" />
           </Link>
           <p className="text-zinc-400 italic text-sm">Vivi l'asfalto. La nostra community vive per la velocità e la passione motoristica pura.</p>
         </div>

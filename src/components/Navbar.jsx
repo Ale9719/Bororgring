@@ -24,7 +24,7 @@ const Navbar = () => {
 
         {/* LOGO */}
         <Link to="/" className="block" onClick={() => setMenuOpen(false)}>
-          <img src="svg/Bororgring.svg" alt="Borörgring Logo" className="w-24 md:w-32 transition-all duration-300" />
+          <img loading="lazy" src="svg/Bororgring.svg" alt="Borörgring Logo" className="w-24 md:w-32 transition-all duration-300" />
         </Link>
 
         {/* Accent bar sotto logo */}
