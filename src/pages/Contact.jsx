@@ -3,14 +3,13 @@ import { Instagram, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <main className="min-h-screen text-white pt-24 pb-20 px-6">
+    <main className="min-h-screen text-white lg:pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         
         <h1 className="text-4xl md:text-7xl font-semibold uppercase mb-8 md:mb-12">
           Mettiti in <span className="text-main">Contatto</span>
         </h1>
 
-        {/* Form — rimosso mx-40, sostituito con max-w centrato */}
         <div className="relative my-5">
           <div className="absolute -inset-1 bg-main opacity-80 blur-2xl" />
 

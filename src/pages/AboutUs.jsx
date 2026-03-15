@@ -43,7 +43,7 @@ const AboutUs = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="relative border-2 border-main p-2 transform -rotate-2 shadow-[0_0_15px_var(--shadow-main)]">
-              <img src="img/IMG_3373.jpg" alt="Storia" className="w-full h-100 object-cover grayscale lg:hover:grayscale-0 transition duration-700" />
+              <img src="img/IMG_3373.jpg" alt="Storia" className="w-full h-100 object-cover lg:grayscale lg:hover:grayscale-0 transition duration-700" />
               <div className="absolute -bottom-6 -right-6 bg-main text-black p-4 font-black uppercase italic text-xl shadow-[5px_5px_0px_white]">
                 Da ieri
               </div>
@@ -62,10 +62,10 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* SECTION 2: MARQUEE (Striscia continua, w-full per uscire dai margini) */}
+      {/* SECTION 2: MARQUEE */}
       <section className="relative z-20 my-20 w-full">
         <div className="py-4 bg-main overflow-hidden whitespace-nowrap border-y-4 border-black rotate-1 md:-rotate-1 scale-105">
-          <div className="flex animate-marquee font-black uppercase italic text-black text-2xl">
+          <div className="flex animate-marquee font-black uppercase italic text-black text-lg lg:text-2xl">
             {[...Array(10)].map((_, i) => (
               <span key={i} className="mx-8">Potenza • Rispetto • Passione •</span>
             ))}
@@ -85,7 +85,7 @@ const AboutUs = () => {
               subtitle={member.role} 
               link={`/team/${member.name.toLowerCase()}`} 
             >
-              <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110" />
+              <img src={member.img} alt={member.name} className="w-full h-full object-cover lg:grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110" />
             </Cards>
           ))}
         </div>

@@ -112,13 +112,15 @@ const nextEvent = events[0];
     </section>
 
       {/* --- DIVISORE DINAMICO --- */}
-      <div className="py-4 bg-main overflow-x-hidden whitespace-nowrap border-y-4 border-main rotate-1 md:-rotate-1 scale-105 z-20 relative">
-        <div className="flex animate-marquee font-black uppercase italic text-black text-lg lg:text-2xl">
-          {[...Array(10)].map((_, i) => (
-            <span key={i} className="mx-8">Driving is living • Borörgring • Join the Crew •</span>
-          ))}
+       <section className="relative z-20 my-20 w-full">
+        <div className="py-4 bg-main overflow-hidden whitespace-nowrap border-y-4 border-black rotate-1 md:-rotate-1 scale-105">
+          <div className="flex animate-marquee font-black uppercase italic text-black text-lg lg:text-2xl">
+            {[...Array(10)].map((_, i) => (
+              <span key={i} className="mx-8">Driving is living • Borörgring • Join the Crew •</span>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* --- SEZIONE CARDS --- */}
       <section className="relative py-16 md:py-32 bg-[url('/img/noise.png')] bg-repeat">
