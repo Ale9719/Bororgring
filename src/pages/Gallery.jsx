@@ -59,15 +59,15 @@ const Gallery = () => {
         <h1 className="text-5xl md:text-7xl font-semibold uppercase italic">{renderTitle(selectedEvent)}</h1>
 
         <div className="relative">
-          <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center gap-3 px-6 py-3 border-2 border-main font-bold uppercase hover:bg-main hover:text-black transition-all">
+          <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center gap-3 px-6 py-3 border-2 border-main font-bold uppercase lg:hover:bg-main lg:hover:text-black transition-all">
             {selectedEvent === "Tutti" ? "Seleziona Evento" : "Cambia Evento"}
           </button>
           
           {isDropdownOpen && (
             <div className="absolute top-full right-0 mt-2 w-64 bg-zinc-900 border-2 border-main z-50">
-              <button onClick={() => { setSelectedEvent("Tutti"); setIsDropdownOpen(false); }} className="block w-full text-left px-4 py-3 hover:bg-main hover:text-black font-bold uppercase border-b border-main/20">Tutti</button>
+              <button onClick={() => { setSelectedEvent("Tutti"); setIsDropdownOpen(false); }} className="block w-full text-left px-4 py-3 lg:hover:bg-main lg:hover:text-black font-bold uppercase border-b border-main/20">Tutti</button>
               {galleryEvents.map(e => (
-                <button key={e.id} onClick={() => { setSelectedEvent(e.label); setIsDropdownOpen(false); }} className="block w-full text-left px-4 py-3 hover:bg-main hover:text-black font-bold uppercase italic">{e.label}</button>
+                <button key={e.id} onClick={() => { setSelectedEvent(e.label); setIsDropdownOpen(false); }} className="block w-full text-left px-4 py-3 lg:hover:bg-main lg:hover:text-black font-bold uppercase italic">{e.label}</button>
               ))}
             </div>
           )}
@@ -93,7 +93,7 @@ const Gallery = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 backdrop-blur-sm" onClick={() => setModalImage(null)}>
           <div className="relative w-fit flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
             <img src={modalImage} alt="Ingrandita" className="max-h-[80vh] border-2 border-main" />
-            <a href={modalImage} download className="bg-main text-black font-bold px-8 py-3 uppercase hover:bg-white transition-all">Scarica</a>
+            <a href={modalImage} download className="bg-main text-black font-bold px-8 py-3 uppercase lg:hover:bg-white transition-all">Scarica</a>
           </div>
         </div>
       )}

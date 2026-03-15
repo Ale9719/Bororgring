@@ -11,7 +11,7 @@ const nextEvent = events[0];
   return (
     <main className="min-h-screen text-white overflow-x-hidden">
       {/* --- BANNER EVENTO IMMINENTE --- */}
-      <section className="mt-24 relative w-full overflow-hidden border-b border-main/30 bg-[#0a0a0a] group">
+      <section className="mt-20 lg:mt-24 relative w-full overflow-hidden border-b border-main/30 bg-[#0a0a0a] group">
         <div className="absolute inset-0 opacity-20 lg:group-hover:opacity-40 transition-opacity duration-700 bg-[url('/img/carbon-pattern.png')] bg-[length:10px_10px]" />
         
         <div className="max-w-7xl mx-auto relative z-10">
