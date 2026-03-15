@@ -5,7 +5,7 @@ import { events } from '../data/eventsData';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const upcomingEvent = events[0];
+const nextEvent = events[0];
 
   return (
     <main className="min-h-screen text-white overflow-x-hidden">
