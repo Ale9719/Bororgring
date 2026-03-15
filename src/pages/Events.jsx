@@ -4,7 +4,7 @@ import { events } from '../data/eventsData';
 
 const Events = () => {
   return (
-    <main className="min-h-screen text-white pt-24 pb-20 px-6">
+    <main className="min-h-screen text-white lg:pt-24 pb-20 px-6">
       <div className='max-w-7xl mx-auto'>
         <h1 className="text-5xl md:text-7xl font-semibold uppercase mb-16">
           Prossimi <span className="text-main">Raduni</span>

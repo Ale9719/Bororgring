@@ -15,12 +15,12 @@ const AboutUs = () => {
   ];
 
   return (
-    <main className="min-h-screen text-white pt-24 pb-20 relative overflow-x-hidden">
+    <main className="min-h-screen text-white lg:pt-24 pb-20 relative overflow-x-hidden">
 
-      {/* SECTION 1: Titolo + Storia */}
+      {/* Titolo + Storia */}
       <section className="max-w-7xl mx-auto px-6 mb-32 relative z-10">
 
-        {/* FUMO — posizionato sotto/attorno all'immagine, fuoriesce di lato */}
+        {/* FUMO */}
         <div className="absolute -left-32 top-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-50">
           <svg className="w-full h-full" preserveAspectRatio="none">
             <defs>

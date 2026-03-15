@@ -18,7 +18,6 @@ const Gallery = () => {
     return patterns[index % patterns.length];
   };
 
-  // Genera le foto provando a caricare fino a 50 immagini per cartella
   const getAllPhotos = () => {
     return galleryEvents.flatMap(event => 
       Array.from({ length: 50 }, (_, i) => ({
@@ -54,9 +53,9 @@ const Gallery = () => {
   );
 };
   return (
-    <div className="min-h-screen text-white pt-24 pb-20 px-6">
+    <div className="min-h-screen text-white lg:pt-24 pb-20 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between mb-10 gap-6">
-        <h1 className="text-5xl md:text-7xl font-semibold uppercase italic">{renderTitle(selectedEvent)}</h1>
+        <h1 className="text-5xl md:text-7xl font-semibold uppercase">{renderTitle(selectedEvent)}</h1>
 
         <div className="relative">
           <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className="flex items-center gap-3 px-6 py-3 border-2 border-main font-bold uppercase lg:hover:bg-main lg:hover:text-black transition-all">
