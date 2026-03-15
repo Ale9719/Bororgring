@@ -65,13 +65,18 @@ const Home = () => {
     </section>
 
       {/* --- DIVISORE DINAMICO --- */}
-      <div className="py-4 bg-main overflow-hidden whitespace-nowrap border-y-4 border-main rotate-1 md:-rotate-1 scale-105 z-20 relative">
-        <div className="flex animate-marquee font-black uppercase italic text-black text-2xl">
-          {[...Array(10)].map((_, i) => (
-            <span key={i} className="mx-8">Driving is living • Borörgring • Join the Crew •</span>
-          ))}
-        </div>
+{/* --- DIVISORE DINAMICO --- */}
+<div className="w-full overflow-hidden">
+  <div className="py-4 bg-main border-y-4 border-main md:-rotate-1 relative">
+    <div className="scale-105 whitespace-nowrap">
+      <div className="flex animate-marquee font-black uppercase italic text-black text-xl md:text-2xl">
+        {[...Array(10)].map((_, i) => (
+          <span key={i} className="mx-8">Driving is living • Borörgring • Join the Crew •</span>
+        ))}
       </div>
+    </div>
+  </div>
+</div>
 
       {/* --- SEZIONE CARDS --- */}
       <section className="relative py-32 bg-[url('/img/noise.png')] bg-repeat">

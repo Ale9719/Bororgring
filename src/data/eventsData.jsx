@@ -5,7 +5,7 @@ export const events = [
     date: "12 Aprile 2026",
     time: "09:00",
     location: "Borore, Sardegna",
-    mapLink: "https://maps.app.goo.gl/TUoK5y5Jm" // Incolla qui il link di Maps
+    mapLink: "https://maps.app.goo.gl/TUoK5y5Jm"
   },
   {
     id: 2,
