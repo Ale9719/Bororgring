@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <main className="min-h-screen text-white overflow-hidden">
+    <main className="min-h-screen text-white overflow-x-hidden">
       
       {/* --- SEZIONE HERO --- */}
       <section className="relative bg-dark w-full min-h-screen flex flex-col justify-center overflow-hidden">
