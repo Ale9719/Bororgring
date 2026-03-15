@@ -3,22 +3,22 @@ import Cards from '../components/Cards';
 
 const AboutUs = () => {
   const team = [
-    { name: "Davide", role: "Fondatore & 'devo fare roba alla macchina'", img: "img/Modde.jpeg" },
-    { name: "Francesco", role: "Fondatore & 'devo fare roba'", img: "img/Fra-auto.jpg" },
-    { name: "Antonio P.", role: "Fondatore & 'una birretta me la bevo'", img: "img/Anto-auto.jpg" },
-    { name: "Anto C.", role: "Fondatore", img: "img/Cocco-porcu.jpeg" },
-    { name: "Anto A.", role: "Fondatore & Fotografo", img: "img/Atz.jpeg" },
-    { name: "Salvatore", role: "Fondatore", img: "img/team3.jpeg" },
-    { name: "Giovanni P.", role: "Fondatore & 'non farmi girare i coglioni'", img: "img/Pirosu.jpeg" },
-    { name: "Matteo", role: "Fondatore", img: "img/Porcu.jpeg" },
-    { name: "Giovanni D.", role: "Fondatore & CEO dell'inquinamento", img: "img/fotos.jpeg" },
+    { name: "Davide", img: "img/Modde.jpeg" },
+    { name: "Francesco", img: "img/Fra-auto.jpg" },
+    { name: "Antonio P.", img: "img/Anto-auto.jpg" },
+    { name: "Anto C.", img: "img/Cocco-porcu.jpeg" },
+    { name: "Anto A.", img: "img/Atz.jpeg" },
+    { name: "Salvatore", img: "img/team3.jpeg" },
+    { name: "Giovanni P.", img: "img/Pirosu.jpeg" },
+    { name: "Matteo", img: "img/Porcu.jpeg" },
+    { name: "Giovanni D.", img: "img/fotos.jpeg" },
   ];
 
   return (
     <main className="min-h-screen text-white pt-24 pb-20 relative overflow-x-hidden">
       
       {/* SFONDO FUMO GLOBALE: Fisso per non interrompersi tra le sezioni */}
-      <div className="fixed inset-0 w-full h-full z-0 pointer-events-none opacity-40">
+      <div className="inset-0 w-full h-full z-0 pointer-events-none opacity-40">
         <svg className="w-full h-full" preserveAspectRatio="none">
           <defs>
             <filter id="dense-smoke2">
@@ -37,13 +37,13 @@ const AboutUs = () => {
 
       {/* SECTION 1: Titolo + Storia */}
       <section className="max-w-7xl mx-auto px-6 mb-32 relative z-10">
-        <h1 className="text-5xl md:text-7xl font-semibold uppercase leading-none mb-20 text-center md:text-left">
+        <h1 className="text-5xl md:text-7xl font-semibold uppercase leading-none mb-20 text-left">
           Oltre il <span className="text-main">Motore</span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="relative border-2 border-main p-2 transform -rotate-2 shadow-[0_0_15px_var(--shadow-main)]">
-              <img src="img/IMG_3373.jpg" alt="Storia" className="w-full h-100 object-cover grayscale hover:grayscale-0 transition duration-700" />
+              <img src="img/IMG_3373.jpg" alt="Storia" className="w-full h-100 object-cover grayscale lg:hover:grayscale-0 transition duration-700" />
               <div className="absolute -bottom-6 -right-6 bg-main text-black p-4 font-black uppercase italic text-xl shadow-[5px_5px_0px_white]">
                 Da ieri
               </div>
@@ -85,7 +85,7 @@ const AboutUs = () => {
               subtitle={member.role} 
               link={`/team/${member.name.toLowerCase()}`} 
             >
-              <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 hover:scale-110" />
+              <img src={member.img} alt={member.name} className="w-full h-full object-cover grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110" />
             </Cards>
           ))}
         </div>
