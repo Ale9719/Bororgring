@@ -11,17 +11,17 @@ const nextEvent = events[0];
   return (
     <main className="min-h-screen text-white overflow-x-hidden">
       {/* --- BANNER EVENTO IMMINENTE --- */}
-      <section className="mt-20 lg:mt-24 relative w-full overflow-hidden border-b border-main/30 bg-[#0a0a0a] group">
-        <div className="absolute inset-0 opacity-20 lg:group-hover:opacity-40 transition-opacity duration-700 bg-[url('/img/carbon-pattern.png')] bg-[length:10px_10px]" />
+      <section className="mt-20 lg:mt-24 relative w-full overflow-hidden border-b border-main/30 bg-dark group">
+        <div className="absolute inset-0 opacity-20 lg:group-hover:opacity-40 transition-opacity duration-700 bg-[url('/img/carbon-pattern.png')] bg-size-[10px_10px]" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-stretch md:items-center">
             
             <div className="bg-main text-black font-black uppercase italic px-6 py-3 md:px-8 md:py-5 flex items-center justify-center md:skew-x-[-15deg] md:-ml-4 md:mr-6 md:shadow-[10px_0_20px_rgba(73,242,242,0.3)]">
-              <span className="md:skew-x-[15deg] text-base md:text-lg tracking-tighter">Next Event</span>
+              <span className="md:skew-x-15 text-base md:text-lg tracking-tighter">Next Event</span>
             </div>
 
-            <div className="flex-grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:items-center items-center text-center md:text-left gap-3 md:gap-10">
+            <div className="grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:items-center items-center text-center md:text-left gap-3 md:gap-10">
               <h2 className="text-lg md:text-2xl font-black uppercase italic tracking-tight text-white">
                 {nextEvent.title}
               </h2>
@@ -104,7 +104,7 @@ const nextEvent = events[0];
           </p>
       </div>
 
-      <div className="relative group min-h-[250px] md:min-h-0">
+      <div className="relative group min-h-62.5 md:min-h-0">
         <div className="absolute inset-0 bg-main/20 blur-[100px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           <Circuit />
         </div>

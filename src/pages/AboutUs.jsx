@@ -21,7 +21,7 @@ const AboutUs = () => {
       <section className="max-w-7xl mx-auto px-6 mb-32 relative z-10">
 
         {/* FUMO */}
-        <div className="absolute -left-32 top-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-50">
+        <div className="absolute -left-32 top-32 w-150 h-150 z-0 pointer-events-none opacity-50">
           <svg className="w-full h-full" preserveAspectRatio="none">
             <defs>
               <filter id="dense-smoke2">
