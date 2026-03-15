@@ -21,12 +21,12 @@ const nextEvent = events[0];
               <span className="md:skew-x-[15deg] text-base md:text-lg tracking-tighter">Next Event</span>
             </div>
 
-            <div className="flex-grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:items-center gap-3 md:gap-10">
+            <div className="flex-grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:items-center items-center text-center md:text-left gap-3 md:gap-10">
               <h2 className="text-lg md:text-2xl font-black uppercase italic tracking-tight text-white">
                 {nextEvent.title}
               </h2>
               
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-5 text-zinc-400 font-bold uppercase text-[10px] md:text-xs tracking-[0.2em]">
+              <div className="flex flex-row flex-wrap justify-center md:justify-start gap-3 md:gap-5 text-zinc-400 font-bold uppercase text-[10px] md:text-xs tracking-[0.2em]">
                 <div className="flex items-center gap-2">
                   <Calendar size={14} className="text-main shrink-0" />
                   <span>{nextEvent.date}</span>
