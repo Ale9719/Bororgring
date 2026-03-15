@@ -85,8 +85,13 @@ const AboutUs = () => {
               subtitle={member.role} 
               link={`/team/${member.name.toLowerCase()}`} 
             >
-              <img src={member.img} alt={member.name} className="w-full h-full object-cover lg:grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110" />
-            </Cards>
+<div className="w-full aspect-square overflow-hidden">
+  <img
+    src={member.img}
+    alt={member.name}
+    className="w-full h-full object-cover lg:grayscale lg:hover:grayscale-0 transition-all duration-500 lg:hover:scale-110"
+  />
+</div>            </Cards>
           ))}
         </div>
       </section>
