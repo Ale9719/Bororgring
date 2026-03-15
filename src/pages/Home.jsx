@@ -14,14 +14,14 @@ const nextEvent = events[0];
       <section className="mt-20 lg:mt-24 relative w-full overflow-hidden border-b border-main/30 bg-dark group">
         <div className="absolute inset-0 opacity-20 lg:group-hover:opacity-40 transition-opacity duration-700 bg-[url('/img/carbon-pattern.png')] bg-size-[10px_10px]" />
         
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-stretch md:items-center">
             
-            <div className="bg-main text-black font-black uppercase italic px-6 py-3 md:px-8 md:py-5 flex items-center justify-center md:skew-x-[-15deg] md:-ml-4 md:mr-6 md:shadow-[10px_0_20px_rgba(73,242,242,0.3)]">
+            <div className="bg-main text-black font-black uppercase italic px-6 py-3 md:px-24 md:py-5 flex items-center justify-center md:skew-x-[-15deg] md:-ml-4 md:mr-6 md:shadow-[10px_0_20px_rgba(73,242,242,0.3)]">
               <span className="md:skew-x-15 text-base md:text-lg tracking-tighter">Next Event</span>
             </div>
 
-            <div className="grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:items-center items-center text-center md:text-left gap-3 md:gap-10">
+            <div className="grow py-4 px-6 md:px-0 flex flex-col md:flex-row md:justify-center items-center text-center md:text-left gap-3 md:gap-10">
               <h2 className="text-lg md:text-2xl font-black uppercase italic tracking-tight text-white">
                 {nextEvent.title}
               </h2>
