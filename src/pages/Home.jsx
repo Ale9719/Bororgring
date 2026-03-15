@@ -11,7 +11,7 @@ const nextEvent = events[0];
   return (
     <main className="min-h-screen text-white overflow-x-hidden">
       {/* 1. BANNER EVENTO IMMINENTE (Sotto la Navbar) */}
-      <section className="relative w-full overflow-hidden border-b border-main/30 bg-[#0a0a0a] group">
+      <section className="mt-24 relative w-full overflow-hidden border-b border-main/30 bg-[#0a0a0a] group">
         {/* Sfondo Carbonio leggero */}
         <div className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity duration-700 bg-[url('/img/carbon-pattern.png')] bg-[length:10px_10px]" />
         
