@@ -3,6 +3,7 @@ import Cards from '../components/Cards';
 import Circuit from '../components/Circuit';
 import { events } from '../data/eventsData';
 import { Link } from 'react-router-dom';
+import { Calendar, MapPin, Clock, ChevronRight } from 'lucide-react';
 
 const Home = () => {
 const nextEvent = events[0];
