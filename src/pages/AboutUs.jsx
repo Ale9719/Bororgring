@@ -3,15 +3,11 @@ import Cards from '../components/Cards';
 
 const AboutUs = () => {
   const team = [
-    { name: "Davide", img: "img/Modde.jpeg" },
+    { name: "Davide", img: "img/Modde-auto.jpeg" },
     { name: "Francesco", img: "img/Fra-auto.jpg" },
-    { name: "Antonio P.", img: "img/Anto-auto.jpg" },
-    { name: "Anto C.", img: "img/Cocco-porcu.jpeg" },
+    { name: "Antonio P.", img: "img/Anto-auto2.jpg" },
     { name: "Anto A.", img: "img/Atz.jpeg" },
-    { name: "Salvatore", img: "img/team3.jpeg" },
-    { name: "Giovanni P.", img: "img/Pirosu.jpeg" },
-    { name: "Matteo", img: "img/Porcu.jpeg" },
-    { name: "Giovanni D.", img: "img/fotos.jpeg" },
+    { name: "Giovanni P.", img: "img/Pirosu-auto.jpeg" },
   ];
 
   return (

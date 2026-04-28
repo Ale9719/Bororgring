@@ -18,7 +18,7 @@ const Cards = ({ title, subtitle, buttonText, children, link }) => {
             <p className="text-xs uppercase tracking-widest text-white/70 mb-4">{subtitle}</p>
           )}
 
-          <div className="w-full h-40 flex items-center justify-center overflow-hidden mb-4">
+          <div className="w-full flex items-center justify-center overflow-hidden mb-4">
             {children}
           </div>
 
