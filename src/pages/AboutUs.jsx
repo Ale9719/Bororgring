@@ -4,7 +4,7 @@ import Cards from '../components/Cards';
 const AboutUs = () => {
   const team = [
     { name: "Davide", img: "img/Modde-auto.jpeg" },
-    { name: "Francesco", img: "img/Fra-auto2.jpg" },
+    { name: "Francesco", img: "img/Fra-auto2.jpeg" },
     { name: "Antonio P.", img: "img/Anto-auto2.jpg" },
     { name: "Anto A.", img: "img/Atz-auto.jpeg" },
     { name: "Giovanni P.", img: "img/Pirosu-auto.jpg" },
