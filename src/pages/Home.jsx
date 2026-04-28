@@ -87,7 +87,7 @@ const nextEvent = events[0];
             to="/contact" 
             className="inline-block w-fit border-2 -skew-x-15 border-main px-8 py-3 mt-8 text-base md:text-lg font-bold uppercase lg:hover:bg-main lg:hover:text-black transition-all duration-300 shadow-[0_0_10px_var(--main-color)]"
           >
-            UNISCITI ALLA NOSTRA COMMUNITY E VIVI L'ASFALTO
+            UNISCITI ALLA NOSTRA COMMUNITY
           </Link>
         </div>
       </section>
